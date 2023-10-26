@@ -2,7 +2,7 @@
 FROM node:latest as node
 WORKDIR /app
 COPY . .
-RUN npm install 
+RUN npm install --legecy-peer-deps
 RUN npm run build --prod
 
 #stage2
